@@ -1,0 +1,180 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Tue Dec  5 23:36:53 2023
+# Process ID: 5580
+# Current directory: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.runs/impl_1
+# Command line: vivado.exe -log Datapath.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Datapath.tcl -notrace
+# Log file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.runs/impl_1/Datapath.vdi
+# Journal file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.runs/impl_1\vivado.jou
+# Running On: LAPTOP-S2U6NPD0, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14877 MB
+#-----------------------------------------------------------
+source Datapath.tcl -notrace
+Command: open_checkpoint Datapath_opt.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 308.992 ; gain = 7.039
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 862.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 953.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (inverted pins: WCLK) (RAMS64E): 12 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.1.1 (64-bit) build 3900603
+open_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 957.629 ; gain = 660.043
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1011.230 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 17416ee3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1011.230 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1011.230 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 445 I/O ports
+ while the target  device: 7k70t package: fbv676, contains only 300 available user I/O. The target device has 300 usable I/O pins of which 0 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+ERROR: [Place 30-68] Instance b_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[26]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[27]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[28]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[29]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[30]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[31]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[5]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[6]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[7]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[8]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance b_OBUF[9]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance clk_IBUF_BUFG_inst (BUFG) is not placed
+ERROR: [Place 30-68] Instance clk_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[26]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[27]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[28]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[29]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[30]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[31]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[5]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[6]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[7]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[8]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance dinstOut_OBUF[9]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ealuc_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ealuc_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ealuc_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ealuc_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ealuimm_OBUF_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance edestReg_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance edestReg_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance edestReg_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance edestReg_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance edestReg_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[26]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[27]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[28]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[29]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance eimm32_OBUF[30]_inst (OBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 0d8c3540
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.311 . Memory (MB): peak = 1011.230 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 0d8c3540
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.312 . Memory (MB): peak = 1011.230 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 0d8c3540
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.313 . Memory (MB): peak = 1011.230 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 0 Warnings, 0 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  5 23:37:06 2023...
